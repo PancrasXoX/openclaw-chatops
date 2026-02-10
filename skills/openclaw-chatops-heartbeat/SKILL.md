@@ -70,6 +70,10 @@ Accept and apply user intent like:
 - Pause/resume digests.
 - Restrict digest windows (e.g., commute time).
 
+Command-style (optional):
+- Skill slash command: `/openclaw_chatops_heartbeat <request>`
+- Generic runner: `/skill openclaw-chatops-heartbeat <request>`
+
 ## Tooling notes
 
 - Use Discord message actions (pins/threads/messages) as available.

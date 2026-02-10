@@ -52,9 +52,9 @@ Natural language:
 - “把需求收口到一个 thread”
 
 Command-style (convention; not required):
-- `/task <title>`
-- `/bug <title>`
-- `/thread <title>`
+- Use the skill slash command (auto-exposed by OpenClaw): `/openclaw_chatops_task_thread <title>`
+- Or use the generic runner: `/skill openclaw-chatops-task-thread <title>`
+- Text-command convention: `task <title>` / `bug <title>` / `thread <title>`
 
 ## Guardrails
 

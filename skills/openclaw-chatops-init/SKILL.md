@@ -61,8 +61,9 @@ Natural language:
 - “帮我创建一个标准的 updates/research/work/qa 频道结构并置顶规则”
 
 Command-style (convention; not required):
-- `/init workspace`
-- `/chatops init`
+- Use the skill slash command (auto-exposed by OpenClaw): `/openclaw_chatops_init`
+- Or use the generic runner: `/skill openclaw-chatops-init <your request>`
+- Text-command convention (if you do not want native slash): `init workspace` / `chatops init`
 
 ## Guardrails
 
