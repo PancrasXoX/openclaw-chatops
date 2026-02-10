@@ -48,7 +48,9 @@ Convert an ad-hoc requirement/bug into a **threaded task** with guaranteed visib
   - Research thread template
 
 5) False-alarm / out-of-scope handling (MUST)
-- If you later determine this was not a task:
+- If you suspect this was not a real task, **ask once** in the thread before archiving:
+  - “这条需要作为任务跟踪吗？如果不需要，我会将该 thread 标记为 `[ARCHIVE]`。”
+- If the user confirms it is **not** a task (or no response after a reasonable time window), then:
   - change the thread title prefix to `[ARCHIVE]`, and
   - post a short note explaining it.
 - Ensure `[ARCHIVE]` threads do not appear in the active index/digest (see `docs/index-and-status.md`).

@@ -17,7 +17,8 @@ This doc defines the minimal shared state for the three core skills:
 - `[ARCHIVE]` threads are excluded from index/digest.
 
 ## False alarm handling
-- If a thread was created by mistake (message was not a task), set the prefix to `[ARCHIVE]` and post a short note explaining it.
+- If a thread might be a false alarm, **ask once** in the thread whether it should be tracked.
+- If confirmed not a task (or no response after a reasonable time window), set the prefix to `[ARCHIVE]` and post a short note explaining it.
 
 ## Canonical index location
 - The canonical index lives as a **single pinned message** in `updates`.
