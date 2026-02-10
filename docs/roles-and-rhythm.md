@@ -85,25 +85,14 @@ MUST:
 
 Heartbeat is the scheduler.
 
-### Output type A: Index (visibility)
-Purpose: threads are easy to miss.
-MUST:
-- Maintain an index in `updates` (pinned) listing active threads by status.
-- Update only when there is meaningful change (new thread, status change, or new activity).
+High-level promises:
+- Keep threads **visible** (an index in `updates`).
+- Maintain a stable **cadence** (periodic digests) without spamming.
+- Users can control rhythm with natural language.
 
-### Output type B: Digest (cadence)
-Purpose: keep a stable rhythm without manual prompting.
-MUST:
-- Summarize recent changes across active threads: Progress / Next / Blockers / Needs-user.
-- Post to `updates` (or the configured channel) only if there is new information.
+Executable procedure (canonical):
+- See `skills/openclaw-chatops-heartbeat/SKILL.md`
 
-### Noise control (required)
-- Skip posting if no changes since last digest/index.
-- Prefer short bullet format with links.
-
-### User control (natural language)
-Users can adjust cadence with plain language:
-- “把索引更新频率改成每 30 分钟”
-- “暂停今天的 digest”
-- “只在通勤时间发汇总”
+Workflow state semantics:
+- See `docs/index-and-status.md`
 

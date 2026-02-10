@@ -35,7 +35,9 @@ Do NOT bikeshed naming. If the user did not specify, use defaults.
 5) Pin operational rules to each channel
 - Post a single “Rules” message in each channel, then `message.pin` it.
 - The pinned text MUST be skimmable: responsibilities + MUST/MUST NOT.
-- Link back to the canonical doc in the repo: `docs/channel-contracts.md`.
+- In Discord pins, always include **full GitHub URLs** (not repo-relative paths):
+  - `docs/channel-contracts.md`
+  - `docs/index-and-status.md`
 
 6) Create and pin an index message
 - In `updates`, post an “Index / How to use this workspace” message and pin it.
@@ -46,7 +48,9 @@ Do NOT bikeshed naming. If the user did not specify, use defaults.
 
 7) Verify permissions / visibility (best-effort)
 - Confirm the bot can: create threads, send messages, pin messages.
+- If the bot appears silent in guild channels, check `requireMention` and mentionPatterns in OpenClaw Discord config.
 - If you detect missing permissions, report the exact missing capability and the minimal Discord permission fix.
+- Tooling/permission notes: see `docs/openclaw-tooling-notes.md`.
 
 ## Output (what success looks like)
 

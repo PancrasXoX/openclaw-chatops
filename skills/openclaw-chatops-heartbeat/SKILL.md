@@ -18,6 +18,9 @@ This skill defines **what heartbeat should do** in the ChatOps workspace:
 
 If the workspace is not initialized, suggest running the init skill.
 
+State semantics (canonical): see `docs/index-and-status.md`.
+Tooling/permission notes: see `docs/openclaw-tooling-notes.md`.
+
 ## Output type A: Index (visibility)
 
 Goal: Make active threads visible even if people miss thread notifications.

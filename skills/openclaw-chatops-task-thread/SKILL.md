@@ -23,13 +23,11 @@ Convert an ad-hoc requirement/bug into a **threaded task** with guaranteed visib
 - This is mandatory because threads are easy to miss.
 
 4) Seed the thread with a template message (MUST)
-- First message in thread includes:
-  - Background
-  - Goal
-  - Acceptance criteria
-  - Next actions
-  - Blockers
-  - Links
+- Use the appropriate template from `docs/channel-contracts.md`:
+  - Work thread template
+  - Bug thread template
+  - Research thread template
+- Keep the first message structured and skimmable.
 
 5) (Optional) Pin the template inside the thread
 - If thread pinning is supported and useful, pin the template message.
