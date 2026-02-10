@@ -21,6 +21,12 @@ A *Channel Contract* is the shared operating agreement for humans **and** the AI
 - When a thread is created, the bot/human **MUST** post a short notice in the parent channel with a **link to the thread**.
 - Avoid private/hidden threads unless explicitly required.
 
+### Misposts / off-topic handling (strict mode)
+- If someone posts task-like content in the wrong place (or posts detailed discussion in a main channel), the AI **MUST**:
+  - create a thread to contain it, and
+  - leave a short parent-channel notice linking to that thread.
+- This is a safety mechanism to keep channels readable and keep work traceable.
+
 ### Traceability
 - Any conclusion/decision MUST include a link to the source thread.
 - “Done” means: outcome announced + links + next steps (or explicit “no next steps”).

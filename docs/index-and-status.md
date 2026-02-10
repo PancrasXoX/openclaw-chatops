@@ -9,10 +9,15 @@ This doc defines the minimal shared state for the three core skills:
 - `[WIP]` — active work
 - `[BLOCKED]` — waiting on missing info/decision/external dependency
 - `[DONE]` — completed (should have an `updates` outcome link)
+- `[ARCHIVE]` — archived / false-alarm / out-of-scope (should not appear in the active index)
 
 ## What counts as “active”
 - Any thread with prefix `[WIP]` or `[BLOCKED]`.
 - `[DONE]` threads are only listed in “recent done” for a short window.
+- `[ARCHIVE]` threads are excluded from index/digest.
+
+## False alarm handling
+- If a thread was created by mistake (message was not a task), set the prefix to `[ARCHIVE]` and post a short note explaining it.
 
 ## Canonical index location
 - The canonical index lives as a **single pinned message** in `updates`.

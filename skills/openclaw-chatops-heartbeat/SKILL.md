@@ -27,7 +27,10 @@ Goal: Make active threads visible even if people miss thread notifications.
 
 Procedure:
 1) Identify active task threads across `work`/`qa`/`research`.
-2) Group by status prefix: `[WIP]`, `[BLOCKED]`, `[DONE]`.
+2) Apply state semantics from `docs/index-and-status.md`:
+   - Active: `[WIP]`, `[BLOCKED]`
+   - Recent done: `[DONE]`
+   - Exclude: `[ARCHIVE]`
 3) Produce a short index message with links to threads.
 4) Pin/refresh the index in `updates`.
 
@@ -41,6 +44,7 @@ Index format (bullet-only):
 
 Noise control:
 - Do not post/update if nothing changed since the last index update.
+- If many "false alarm" threads appear, treat it as a signal to tighten intake questions and archive quickly.
 
 ## Output type B: Digest (cadence)
 
